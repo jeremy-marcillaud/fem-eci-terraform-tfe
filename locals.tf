@@ -14,5 +14,12 @@ locals {
         project_id        = module.project["fem-eci-project"].id
         vcs_repo_identifier = "jeremy-marcillaud/fem-eci-terraform-tfe"
         }
+
+        "fem-eci-github" = {
+        description       = "Example description of workspace" 
+        execution_mode    = "local"
+        project_id        = module.project["fem-eci-project"].id
+        vcs_repo_identifier = "jeremy-marcillaud/fem-eci-terraform-github"
+        }
     }
 }
